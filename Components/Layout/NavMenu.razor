@@ -1,7 +1,6 @@
-﻿<input type="checkbox" title="Navigation menu" class="navbar-toggler position-absolute d-md-none" />
-<nav id="sidebarMenu" class="sidebar" style="">
-
-      <div class="position-sticky pt-3">
+﻿<input type="checkbox" title="Navigation menu" class="navbar-toggler position-absolute d-md-none" aria-controls="sidebarMenu" />
+<nav id="sidebarMenu" class="sidebar" onclick="document.querySelector('.navbar-toggler').click()">
+    <div class="position-sticky pt-3">
         <ul class="nav flex-column">
             <div class="nav-item px-3">
                 <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
@@ -15,5 +14,5 @@
                 </NavLink>
             </div>
         </ul>
-      </div>
-    </nav>
+    </div>
+</nav>
