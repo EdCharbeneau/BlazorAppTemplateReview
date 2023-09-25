@@ -1,18 +1,18 @@
 ﻿<input type="checkbox" title="Navigation menu" class="navbar-toggler position-absolute d-md-none" aria-controls="sidebarMenu" />
 <nav id="sidebarMenu" class="sidebar" onclick="document.querySelector('.navbar-toggler').click()">
-    <div class="position-sticky pt-3">
-        <ul class="nav flex-column">
-            <div class="nav-item px-3">
-                <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
-                    <span class="bi bi-house-door-fill" aria-hidden="true"></span> Home
-                </NavLink>
-            </div>
+    <div class="position-sticky py-3">
+        <ul class="nav flex-column gap-3 nav-pills">
+            <li>
+                    <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
+                        <span class="bi bi-house-door-fill" aria-hidden="true"></span> Home
+                    </NavLink>
+                </li>
 
-            <div class="nav-item px-3">
+            <li>
                 <NavLink class="nav-link" href="weather">
                     <span class="bi bi-list-nested" aria-hidden="true"></span> Weather
                 </NavLink>
-            </div>
+            </li>
         </ul>
     </div>
 </nav>
