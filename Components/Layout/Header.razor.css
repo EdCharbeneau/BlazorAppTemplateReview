@@ -1,0 +1,19 @@
+.navbar-brand {
+    height: 3.5rem;
+    font-size: 1.1rem;
+    background-color: rgba(0, 0, 0, .25);
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    background-color: rgb(5, 39, 103);
+    color:white;
+}
+
+@media (width >= 641px) {
+    .navbar-brand {
+        width: 250px;
+        margin-right: 1rem;
+    }
+}
