@@ -2,9 +2,13 @@
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-h1:focus {
-    outline: none;
-}
+/*
+    This is bas for a11y, let's not do this
+    https://www.a11yproject.com/posts/never-remove-css-outlines/#:%7E:text=Using%20the%20CSS%20rule%20%3Afocus,with%20the%20link%20or%20control.
+    h1:focus {
+        outline: none;
+    }
+*/
 
 a, .btn-link {
     color: #0071c1;
