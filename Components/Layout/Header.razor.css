@@ -6,10 +6,9 @@
     align-items: center;
     margin: 0;
     background-color: rgb(5, 39, 103);
-    color:white;
 }
 
-    .navbar-brand:hover, .navbar-brand:visited {
+    .navbar-brand, .navbar-brand:hover, .navbar-brand:visited {
         color: white;
     }
 
