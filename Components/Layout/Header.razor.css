@@ -5,11 +5,11 @@
     display: flex;
     align-items: center;
     margin: 0;
-    background-color: var(--bl-blazor-brand-color1, black);
+    background-color: var(--bl-blazor-brand-color1);
 }
 
     .navbar-brand, .navbar-brand:hover, .navbar-brand:visited {
-        color: var(--bl-blazor-brand-contrast-color, white);
+        color: var(--bl-blazor-brand-contrast-color);
     }
 
 @media (width >= 641px) {

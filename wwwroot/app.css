@@ -2,14 +2,16 @@
     --bl-blazor-brand-color1: #052767;
     --bl-blazor-brand-color2: #3a0647;
     --bl-blazor-brand-contrast-color: white;
+    --bl-sidebar-gradient: linear-gradient(180deg, var(--bl-blazor-brand-color1) 0%, var(--bl-blazor-brand-color2) 70%);
+    --bl-nav-pills-link-active-bg: rgba(255,255,255,0.25);
+    --bl-nav-pills-link-hover-color-bg: rgba(255,255,255,0.1);
+    --bl-sidebar-navlink-color: white;
+    --bl-nav-pills-link-active-color: white;
+    --bl-nav-pills-link-hover-color: white;
 }
 /*
     Optional:
     --bl-sidebar-background: black;
-    --bl-sidebar-background: linear-gradient(180deg, var(--bl-blazor-brand-color1) 0%, var(--bl-blazor-brand-color2) 70%));
-    --bl-sidebar-link-bg-color:  rgba(255,255,255,0.25);
-    --bl-sidebar-link-bg-color-hover: rgba(255,255,255,0.1);
-    --bl-sidebar-link-color: white;
     --bl-error-ui-bg-color: lightyellow;
     --bl-error-ui-bg: black;
 */
