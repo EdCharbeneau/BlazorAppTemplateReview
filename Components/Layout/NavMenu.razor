@@ -1,12 +1,12 @@
-﻿<input type="checkbox" title="Navigation menu" class="navbar-toggler position-absolute d-md-none" aria-controls="sidebarMenu" />
+﻿<input type="checkbox" aria-label="Toggle navigation" class="navbar-toggler position-absolute d-md-none" aria-controls="sidebarMenu" />
 <nav id="sidebarMenu" class="sidebar" onclick="document.querySelector('.navbar-toggler').click()">
     <div class="position-sticky py-3">
         <ul class="nav flex-column gap-3 nav-pills">
             <li>
-                    <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
-                        <span class="bi bi-house-door-fill" aria-hidden="true"></span> Home
-                    </NavLink>
-                </li>
+                <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
+                    <span class="bi bi-house-door-fill" aria-hidden="true"></span> Home
+                </NavLink>
+            </li>
 
             <li>
                 <NavLink class="nav-link" href="weather">

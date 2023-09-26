@@ -1,27 +1,28 @@
-﻿a, .btn-link {
-    color: #0071c1;
+﻿:root {
+    --bl-blazor-brand-color1: #052767;
+    --bl-blazor-brand-color2: #3a0647;
+    --bl-blazor-brand-contrast-color: white;
 }
-
-.btn-primary {
-    color: #fff;
-    background-color: #1b6ec2;
-    border-color: #1861ac;
-}
-
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
-}
-
+/*
+    Optional:
+    --bl-sidebar-background: black;
+    --bl-sidebar-background: linear-gradient(180deg, var(--bl-blazor-brand-color1) 0%, var(--bl-blazor-brand-color2) 70%));
+    --bl-sidebar-link-bg-color:  rgba(255,255,255,0.25);
+    --bl-sidebar-link-bg-color-hover: rgba(255,255,255,0.1);
+    --bl-sidebar-link-color: white;
+    --bl-error-ui-bg-color: lightyellow;
+    --bl-error-ui-bg: black;
+*/
 .valid.modified:not([type=checkbox]) {
-    outline: 1px solid #26b050;
+    outline: 1px solid var(--bs-success);
 }
 
 .invalid {
-    outline: 1px solid red;
+    outline: 1px solid var(--bs-danger);
 }
 
 .validation-message {
-    color: red;
+    color: var(--bs-danger);
 }
 
 .blazor-error-boundary {
