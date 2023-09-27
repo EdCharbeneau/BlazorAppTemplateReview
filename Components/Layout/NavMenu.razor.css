@@ -1,34 +1,32 @@
 .sidebar {
-    display: none; /* default to none, navbar-toggler can override this value */
     background-color: var(--bl-sidebar-background);
     background-image: var(--bl-sidebar-gradient);
     overflow-x: hidden;
     overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
 }
+    .sidebar.hidden {
+        display: none; /* default to none, navbar-toggler can override this value */
+    } 
 
 .navbar-toggler {
-    color: white;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 4px;
-    z-index: 10000;
-    appearance: none;
-    cursor: pointer;
+    position: absolute;
     width: 3.5rem;
     height: 2.5rem;
     top: 0.5rem;
     right: 1rem;
-    background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") no-repeat center/1.75rem rgba(255, 255, 255, 0.1);
+    --bs-navbar-color: rgba(255,255,255, 0.75);
+    --bs-navbar-toggler-padding-y: 0.25rem;
+    --bs-navbar-toggler-padding-x: 0.75rem;
+    --bs-navbar-toggler-font-size: 1.25rem;
+    --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2833, 37, 41, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    --bs-navbar-toggler-border-radius: var(--bs-border-radius);
+    --bs-navbar-toggler-focus-width: 0.25rem;
+    --bs-navbar-toggler-transition: box-shadow 0.15s ease-in-out;
 }
-
-    .navbar-toggler:checked {
-        background-color: rgba(255, 255, 255, 0.5);
+    .navbar-toggler.force-darkmode {
+        --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        --bs-navbar-toggler-border-color: rgba(255,255,255, 0.15);
     }
-
-
-.navbar-toggler:checked ~ .sidebar {
-    display: block;
-}
-
 /* .nav-link */
 
 ::deep .nav-link {
@@ -68,8 +66,10 @@
 
     .sidebar {
         /* Never collapse the sidebar */
-        display: block;
         height: calc(100vh - 56px);
         width: 250px;
+    }
+    .sidebar.hidden {
+        display:block;
     }
 }

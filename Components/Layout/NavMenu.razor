@@ -1,5 +1,8 @@
-﻿<input type="checkbox" aria-label="Toggle navigation" class="navbar-toggler position-absolute d-md-none" aria-controls="sidebarMenu" />
-<nav id="sidebarMenu" class="sidebar bg-body-tertiary" onclick="document.querySelector('.navbar-toggler').click()">
+﻿<button class="navbar-toggler force-darkmode" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+        onclick="var menu = document.querySelector('#sidebarMenu'); menu.classList.toggle('hidden'); menu.ariaExpanded = menu.ariaExpanded !== 'true'; menu.querySelector('.nav-link').focus();">
+    <span class="navbar-toggler-icon"></span>
+</button>
+<nav id="sidebarMenu" class="sidebar bg-body-tertiary" aria-expanded="true" onclick="document.querySelector('.navbar-toggler').click()">
     <div class="position-sticky py-3">
         <ul class="nav flex-column gap-3 nav-pills">
             <li>
