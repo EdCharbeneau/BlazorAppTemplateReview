@@ -1,8 +1,41 @@
-﻿<header class="navbar bg-body-tertiary p-0 shadow-sm">
+﻿<header class="navbar navbar-expand flex-wrap justify-content-between bg-body-tertiary p-0 shadow-sm">
     <a class="navbar-brand ps-3" href="#">Company name</a>
-    <div class="navbar-nav flex-row">
-        <div class="nav-item text-nowrap">
-            <a class="nav-link px-3" href="https://learn.microsoft.com/aspnet/core/" target="_blank">About</a>
-        </div>
-    </div>
+    <ul class="navbar-nav">
+        <li>
+            <a class="nav-link" href="Identity/Account/Manage">Hello, sample@@sample.com!</a>
+        </li>
+        <li class="nav-item">
+            <form method="post" action="Identity/Account/Logout">
+                <button type="submit" class="nav-link btn btn-link">Log out</button>
+            </form>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="https://learn.microsoft.com/aspnet/core/" target="_blank">About</a>
+        </li>
+    </ul>
 </header>
+
+
+@* 
+Move to LoginDisplay.razor
+<AuthorizeView>
+    <Authorized>
+        <li>
+            <a class="nav-link" href="Identity/Account/Manage">Hello, sample@@sample.com!</a>
+        </li>
+        <li class="nav-item">
+            <form method="post" action="Identity/Account/Logout">
+                <button type="submit" class="nav-link btn btn-link">Log out</button>
+            </form>
+        </li>
+    </Authorized>
+    <NotAuthorized>
+        <li class="nav-item">
+            <a class="nav-link" href="Identity/Account/Register">Register</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="Identity/Account/Login">Log in</a>
+        </li>
+    </NotAuthorized>
+</AuthorizeView>
+ *@
